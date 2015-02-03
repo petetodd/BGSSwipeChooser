@@ -15,6 +15,18 @@
 		D0B72BC31A7CF58900546ED3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0B72BC21A7CF58900546ED3 /* Images.xcassets */; };
 		D0B72BC61A7CF58900546ED3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0B72BC41A7CF58900546ED3 /* LaunchScreen.xib */; };
 		D0B72BD21A7CF58900546ED3 /* BGSSwipeChooserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B72BD11A7CF58900546ED3 /* BGSSwipeChooserTests.m */; };
+		D0B72BDE1A7E789400546ED3 /* iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0B72BDD1A7E789400546ED3 /* iPhone.storyboard */; };
+		D0B72BEF1A7F7BEA00546ED3 /* BGSSwipeDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B72BEE1A7F7BEA00546ED3 /* BGSSwipeDataSource.m */; };
+		D0B72BF21A7F7C7400546ED3 /* BGSSwipeCVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B72BF11A7F7C7400546ED3 /* BGSSwipeCVC.m */; };
+		D0B72BF71A7F854300546ED3 /* BGSSampleScheduleEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B72BF61A7F854300546ED3 /* BGSSampleScheduleEvent.m */; };
+		D0B72BFE1A7FA22100546ED3 /* Peter_cold.png in Resources */ = {isa = PBXBuildFile; fileRef = D0B72BF91A7FA22100546ED3 /* Peter_cold.png */; };
+		D0B72BFF1A7FA22100546ED3 /* Peter_flower.png in Resources */ = {isa = PBXBuildFile; fileRef = D0B72BFA1A7FA22100546ED3 /* Peter_flower.png */; };
+		D0B72C001A7FA22100546ED3 /* Peter_focused.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D0B72BFB1A7FA22100546ED3 /* Peter_focused.jpg */; };
+		D0B72C011A7FA22100546ED3 /* peter_hike.png in Resources */ = {isa = PBXBuildFile; fileRef = D0B72BFC1A7FA22100546ED3 /* peter_hike.png */; };
+		D0B72C021A7FA22100546ED3 /* Peter_lookalike.png in Resources */ = {isa = PBXBuildFile; fileRef = D0B72BFD1A7FA22100546ED3 /* Peter_lookalike.png */; };
+		D0B72C051A7FA58F00546ED3 /* BGSScheduleEventCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B72C041A7FA58F00546ED3 /* BGSScheduleEventCell.m */; };
+		D0B72C071A7FA63A00546ED3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0B72C061A7FA63A00546ED3 /* QuartzCore.framework */; };
+		D0B72C0B1A7FB17B00546ED3 /* BGSSwipeFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B72C0A1A7FB17B00546ED3 /* BGSSwipeFlowLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +54,24 @@
 		D0B72BCB1A7CF58900546ED3 /* BGSSwipeChooserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BGSSwipeChooserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0B72BD01A7CF58900546ED3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0B72BD11A7CF58900546ED3 /* BGSSwipeChooserTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BGSSwipeChooserTests.m; sourceTree = "<group>"; };
+		D0B72BDD1A7E789400546ED3 /* iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = iPhone.storyboard; path = Storyboards/iPhone.storyboard; sourceTree = "<group>"; };
+		D0B72BED1A7F7BEA00546ED3 /* BGSSwipeDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BGSSwipeDataSource.h; path = BGSSwipeCollectionView/dataSource/BGSSwipeDataSource.h; sourceTree = "<group>"; };
+		D0B72BEE1A7F7BEA00546ED3 /* BGSSwipeDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BGSSwipeDataSource.m; path = BGSSwipeCollectionView/dataSource/BGSSwipeDataSource.m; sourceTree = "<group>"; };
+		D0B72BF01A7F7C7400546ED3 /* BGSSwipeCVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BGSSwipeCVC.h; path = BGSSwipeCollectionView/BGSSwipeCVC.h; sourceTree = "<group>"; };
+		D0B72BF11A7F7C7400546ED3 /* BGSSwipeCVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BGSSwipeCVC.m; path = BGSSwipeCollectionView/BGSSwipeCVC.m; sourceTree = "<group>"; };
+		D0B72BF41A7F83A000546ED3 /* BGSScheduleEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BGSScheduleEvent.h; path = BGSSwipeCollectionView/dataModel/BGSScheduleEvent.h; sourceTree = "<group>"; };
+		D0B72BF51A7F854300546ED3 /* BGSSampleScheduleEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BGSSampleScheduleEvent.h; path = BGSSwipeCollectionView/dataModel/BGSSampleScheduleEvent.h; sourceTree = "<group>"; };
+		D0B72BF61A7F854300546ED3 /* BGSSampleScheduleEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BGSSampleScheduleEvent.m; path = BGSSwipeCollectionView/dataModel/BGSSampleScheduleEvent.m; sourceTree = "<group>"; };
+		D0B72BF91A7FA22100546ED3 /* Peter_cold.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Peter_cold.png; path = Assets/Peter_cold.png; sourceTree = SOURCE_ROOT; };
+		D0B72BFA1A7FA22100546ED3 /* Peter_flower.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Peter_flower.png; path = Assets/Peter_flower.png; sourceTree = SOURCE_ROOT; };
+		D0B72BFB1A7FA22100546ED3 /* Peter_focused.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Peter_focused.jpg; path = Assets/Peter_focused.jpg; sourceTree = SOURCE_ROOT; };
+		D0B72BFC1A7FA22100546ED3 /* peter_hike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = peter_hike.png; path = Assets/peter_hike.png; sourceTree = SOURCE_ROOT; };
+		D0B72BFD1A7FA22100546ED3 /* Peter_lookalike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Peter_lookalike.png; path = Assets/Peter_lookalike.png; sourceTree = SOURCE_ROOT; };
+		D0B72C031A7FA58F00546ED3 /* BGSScheduleEventCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BGSScheduleEventCell.h; path = BGSSwipeCollectionView/BGSScheduleEventCell.h; sourceTree = "<group>"; };
+		D0B72C041A7FA58F00546ED3 /* BGSScheduleEventCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BGSScheduleEventCell.m; path = BGSSwipeCollectionView/BGSScheduleEventCell.m; sourceTree = "<group>"; };
+		D0B72C061A7FA63A00546ED3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D0B72C091A7FB17B00546ED3 /* BGSSwipeFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BGSSwipeFlowLayout.h; path = BGSSwipeCollectionView/flowLayout/BGSSwipeFlowLayout.h; sourceTree = "<group>"; };
+		D0B72C0A1A7FB17B00546ED3 /* BGSSwipeFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BGSSwipeFlowLayout.m; path = BGSSwipeCollectionView/flowLayout/BGSSwipeFlowLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0B72C071A7FA63A00546ED3 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +96,7 @@
 		D0B72BA61A7CF58800546ED3 = {
 			isa = PBXGroup;
 			children = (
+				D0B72C061A7FA63A00546ED3 /* QuartzCore.framework */,
 				D0B72BB11A7CF58900546ED3 /* BGSSwipeChooser */,
 				D0B72BCE1A7CF58900546ED3 /* BGSSwipeChooserTests */,
 				D0B72BB01A7CF58900546ED3 /* Products */,
@@ -83,11 +115,13 @@
 		D0B72BB11A7CF58900546ED3 /* BGSSwipeChooser */ = {
 			isa = PBXGroup;
 			children = (
+				D0B72BF81A7FA04300546ED3 /* assets */,
+				D0B72BDC1A7E780500546ED3 /* Storyboards */,
+				D0B72BDB1A7CF7FA00546ED3 /* BGSSwipeCollectionView */,
 				D0B72BB61A7CF58900546ED3 /* AppDelegate.h */,
 				D0B72BB71A7CF58900546ED3 /* AppDelegate.m */,
 				D0B72BBC1A7CF58900546ED3 /* ViewController.h */,
 				D0B72BBD1A7CF58900546ED3 /* ViewController.m */,
-				D0B72BBF1A7CF58900546ED3 /* Main.storyboard */,
 				D0B72BC21A7CF58900546ED3 /* Images.xcassets */,
 				D0B72BC41A7CF58900546ED3 /* LaunchScreen.xib */,
 				D0B72BB91A7CF58900546ED3 /* BGSSwipeChooser.xcdatamodeld */,
@@ -120,6 +154,69 @@
 				D0B72BD01A7CF58900546ED3 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D0B72BDB1A7CF7FA00546ED3 /* BGSSwipeCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				D0B72C081A7FB13700546ED3 /* flowLayout */,
+				D0B72BF31A7F82DB00546ED3 /* dataModel */,
+				D0B72BEC1A7F7B7F00546ED3 /* dataSource */,
+				D0B72BF01A7F7C7400546ED3 /* BGSSwipeCVC.h */,
+				D0B72BF11A7F7C7400546ED3 /* BGSSwipeCVC.m */,
+				D0B72C031A7FA58F00546ED3 /* BGSScheduleEventCell.h */,
+				D0B72C041A7FA58F00546ED3 /* BGSScheduleEventCell.m */,
+			);
+			name = BGSSwipeCollectionView;
+			sourceTree = "<group>";
+		};
+		D0B72BDC1A7E780500546ED3 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				D0B72BBF1A7CF58900546ED3 /* Main.storyboard */,
+				D0B72BDD1A7E789400546ED3 /* iPhone.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		D0B72BEC1A7F7B7F00546ED3 /* dataSource */ = {
+			isa = PBXGroup;
+			children = (
+				D0B72BED1A7F7BEA00546ED3 /* BGSSwipeDataSource.h */,
+				D0B72BEE1A7F7BEA00546ED3 /* BGSSwipeDataSource.m */,
+			);
+			name = dataSource;
+			sourceTree = "<group>";
+		};
+		D0B72BF31A7F82DB00546ED3 /* dataModel */ = {
+			isa = PBXGroup;
+			children = (
+				D0B72BF41A7F83A000546ED3 /* BGSScheduleEvent.h */,
+				D0B72BF51A7F854300546ED3 /* BGSSampleScheduleEvent.h */,
+				D0B72BF61A7F854300546ED3 /* BGSSampleScheduleEvent.m */,
+			);
+			name = dataModel;
+			sourceTree = "<group>";
+		};
+		D0B72BF81A7FA04300546ED3 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				D0B72BF91A7FA22100546ED3 /* Peter_cold.png */,
+				D0B72BFA1A7FA22100546ED3 /* Peter_flower.png */,
+				D0B72BFB1A7FA22100546ED3 /* Peter_focused.jpg */,
+				D0B72BFC1A7FA22100546ED3 /* peter_hike.png */,
+				D0B72BFD1A7FA22100546ED3 /* Peter_lookalike.png */,
+			);
+			name = assets;
+			sourceTree = "<group>";
+		};
+		D0B72C081A7FB13700546ED3 /* flowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				D0B72C091A7FB17B00546ED3 /* BGSSwipeFlowLayout.h */,
+				D0B72C0A1A7FB17B00546ED3 /* BGSSwipeFlowLayout.m */,
+			);
+			name = flowLayout;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,8 +300,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0B72BC11A7CF58900546ED3 /* Main.storyboard in Resources */,
+				D0B72C011A7FA22100546ED3 /* peter_hike.png in Resources */,
+				D0B72BFE1A7FA22100546ED3 /* Peter_cold.png in Resources */,
+				D0B72C021A7FA22100546ED3 /* Peter_lookalike.png in Resources */,
 				D0B72BC61A7CF58900546ED3 /* LaunchScreen.xib in Resources */,
 				D0B72BC31A7CF58900546ED3 /* Images.xcassets in Resources */,
+				D0B72BDE1A7E789400546ED3 /* iPhone.storyboard in Resources */,
+				D0B72BFF1A7FA22100546ED3 /* Peter_flower.png in Resources */,
+				D0B72C001A7FA22100546ED3 /* Peter_focused.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,7 +325,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0B72BF71A7F854300546ED3 /* BGSSampleScheduleEvent.m in Sources */,
+				D0B72C0B1A7FB17B00546ED3 /* BGSSwipeFlowLayout.m in Sources */,
+				D0B72BF21A7F7C7400546ED3 /* BGSSwipeCVC.m in Sources */,
+				D0B72BEF1A7F7BEA00546ED3 /* BGSSwipeDataSource.m in Sources */,
 				D0B72BB81A7CF58900546ED3 /* AppDelegate.m in Sources */,
+				D0B72C051A7FA58F00546ED3 /* BGSScheduleEventCell.m in Sources */,
 				D0B72BB51A7CF58900546ED3 /* main.m in Sources */,
 				D0B72BBE1A7CF58900546ED3 /* ViewController.m in Sources */,
 				D0B72BBB1A7CF58900546ED3 /* BGSSwipeChooser.xcdatamodeld in Sources */,
@@ -352,6 +460,7 @@
 				INFOPLIST_FILE = BGSSwipeChooser/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -362,6 +471,7 @@
 				INFOPLIST_FILE = BGSSwipeChooser/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
