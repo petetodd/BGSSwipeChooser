@@ -87,7 +87,14 @@ const CGFloat TopBarHeight = 44;
     BGSSwipeDataSource *dataSource = (BGSSwipeDataSource *) self.collectionView.dataSource;
     id<BGSScheduleEvent> event = [dataSource eventAtIndexPath:indexPath];
     UICollectionViewLayoutAttributes *attributes = [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:indexPath];
-    attributes.frame = [self frameForEvent:event];
+    
+    if (self.isPanning &&(indexPath.row == self.selectedIndexPath.row))
+    {
+        attributes.frame =[self frameForPanningEvent:event];
+    }else
+    {
+        attributes.frame = [self frameForEvent:event];
+    }
     return attributes;
 }
 
@@ -133,6 +140,26 @@ const CGFloat TopBarHeight = 44;
   //  frame = CGRectInset(frame, 1, 0);
     return frame;
 }
+- (CGRect)frameForPanningEvent:(id<BGSScheduleEvent>)event
+{
+    CGRect frame = CGRectZero;
+    
+    // Always offset by the width of the y axis header
+    frame.origin.x = self.xPan;
+  //  frame.origin.x = _topFrameX + _offSet;
+
+    
+    frame.origin.y = self.yPan ;
+ //   frame.origin.y = _topFrameY + _offSet ;
+
+
+    frame.size.width = _topFrameWidth ;
+    frame.size.height = _topFrameHeight;
+    
+    return frame;
+}
+
+
 
 
 @end

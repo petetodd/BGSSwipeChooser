@@ -26,7 +26,7 @@
         <scene sceneID="QXE-r3-JaY">
             <objects>
                 <collectionViewController id="orQ-YE-B9Y" customClass="BGSSwipeCVC" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="sbV-7D-Kdu">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" id="sbV-7D-Kdu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <collectionViewLayout key="collectionViewLayout" id="9M8-B8-PuA" customClass="BGSSwipeFlowLayout"/>

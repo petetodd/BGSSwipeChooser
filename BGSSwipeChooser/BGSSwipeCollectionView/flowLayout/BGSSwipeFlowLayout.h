@@ -11,5 +11,8 @@
 #import "BGSScheduleEvent.h"
 
 @interface BGSSwipeFlowLayout : UICollectionViewFlowLayout
-
+@property CGFloat xPan;
+@property CGFloat yPan;
+@property (strong, nonatomic) NSIndexPath *selectedIndexPath;
+@property BOOL isPanning;
 @end
