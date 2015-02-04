@@ -29,30 +29,41 @@
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" id="sbV-7D-Kdu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.98302861300911748" green="1" blue="0.98804753440584314" alpha="1" colorSpace="calibratedRGB"/>
                         <collectionViewLayout key="collectionViewLayout" id="9M8-B8-PuA" customClass="BGSSwipeFlowLayout"/>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="Fau-Lt-hu6" customClass="BGSScheduleEventCell">
                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="146" height="168"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="369" height="509"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7tz-8k-LnY">
-                                            <rect key="frame" x="8" y="368" width="271" height="21"/>
+                                            <rect key="frame" x="49" y="337" width="271" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="emd-H7-i1m">
-                                            <rect key="frame" x="8" y="8" width="271" height="352"/>
+                                            <rect key="frame" x="49" y="8" width="271" height="319"/>
                                         </imageView>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kqz-hU-stN">
+                                            <rect key="frame" x="8" y="8" width="70" height="70"/>
+                                            <color key="backgroundColor" red="0.47843137250000001" green="0.73725490199999999" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
+                                        </view>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rxD-pX-cIe">
+                                            <rect key="frame" x="291" y="8" width="70" height="70"/>
+                                            <color key="backgroundColor" red="0.71372550729999995" green="0.1215686277" blue="0.14509804549999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        </view>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <size key="customSize" width="146" height="168"/>
+                                <size key="customSize" width="369" height="509"/>
                                 <connections>
+                                    <outlet property="cellGreen" destination="kqz-hU-stN" id="iIb-ub-ytZ"/>
+                                    <outlet property="cellRed" destination="rxD-pX-cIe" id="RbE-rx-nLb"/>
                                     <outlet property="imgEvent" destination="emd-H7-i1m" id="0N9-iO-roQ"/>
                                     <outlet property="titleLabel" destination="7tz-8k-LnY" id="5kU-0q-6JJ"/>
                                 </connections>
@@ -68,7 +79,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="azb-dV-AgN" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <customObject id="NqA-MQ-76D" customClass="BGSSwipeDataSource"/>
             </objects>
-            <point key="canvasLocation" x="622" y="224"/>
+            <point key="canvasLocation" x="599" y="224"/>
         </scene>
     </scenes>
 </document>

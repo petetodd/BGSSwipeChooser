@@ -9,6 +9,8 @@
 #import "BGSSwipeCVC.h"
 #import "BGSScheduleEvent.h"
 #import "BGSSwipeFlowLayout.h"
+#import "BGSScheduleEventCell.h"
+
 
 @interface BGSSwipeCVC ()
 
@@ -44,6 +46,7 @@
         [cell setup];
         
     };
+    
 
 }
 
@@ -67,12 +70,75 @@
 
 -(void)actionPanOnCV:(UIPanGestureRecognizer *)panRecognizer
 {
-    NSLog(@"DEBUG Detected a Pan");
+    // Get a reference to the flow layout
+    BGSSwipeFlowLayout *flowLayout = (BGSSwipeFlowLayout *)self.collectionView.collectionViewLayout;
+    // reference to datesource - used to get top index path
+    BGSSwipeDataSource *dataSource = (BGSSwipeDataSource *)self.collectionView.dataSource;
+    NSIndexPath *indexPath = [NSIndexPath indexPathForItem:([dataSource.events count] -1) inSection:0];
+
+
+    
+    if(panRecognizer.state == UIGestureRecognizerStateEnded || panRecognizer.state == UIGestureRecognizerStateFailed || panRecognizer.state == UIGestureRecognizerStateCancelled)
+    {
+        NSLog(@"DEBUG Detected a Pan Finish");
+        // Detect what to do
+        BGSScheduleEventCell *cell = (BGSScheduleEventCell *)  [self.collectionView cellForItemAtIndexPath:indexPath];
+        if (cell.cellRed.alpha ==1)
+        {
+            NSLog(@"DELETE EVENT");
+            [dataSource.events removeObjectAtIndex:[indexPath row]];
+
+        /*
+            [self.collectionView performBatchUpdates:^{
+                NSArray *arrayIndexPaths = [[NSArray alloc]initWithObjects:indexPath, nil];
+                [dataSource.events removeObjectAtIndex:[indexPath row]];
+                [self.collectionView deleteItemsAtIndexPaths:arrayIndexPaths];
+            } completion:nil];
+         */
+            _xPan = 0;
+            _yPan = 0;
+            [flowLayout setIsPanning:NO];
+            [flowLayout setXPan:0];
+            [flowLayout setYPan:0];
+            [flowLayout setSelectedIndexPath:nil];
+           // [flowLayout layoutAttributesForItemAtIndexPath:indexPath];
+            
+            [flowLayout invalidateLayout];
+            return;
+            
+        } else if (cell.cellGreen.alpha ==1)
+        {
+            UIAlertView *alertDialog;
+            alertDialog = [[UIAlertView alloc]
+                           initWithTitle: @"YOU SELECTED" message:@"BUT NOTHING IMPLEMENTED." delegate: nil cancelButtonTitle: @"Ok" otherButtonTitles: nil];
+            [alertDialog show];
+
+            
+        }
+
+        
+        _xPan = 0;
+        _yPan = 0;
+        [flowLayout setIsPanning:NO];
+        [flowLayout setXPan:0];
+        [flowLayout setYPan:0];
+        [flowLayout setSelectedIndexPath:indexPath];
+        [flowLayout layoutAttributesForItemAtIndexPath:indexPath];
+        [flowLayout invalidateLayout];
+        
+        
+
+        return;
+
+        
+    }
+    
+  //  NSLog(@"DEBUG Detected a Pan");
     CGPoint touchPoint = [panRecognizer locationInView: self.view];
     CGFloat x_increment;
     CGFloat y_increment;
 
-    NSLog(@"DEBUG Location in view %f, %f",touchPoint.x,touchPoint.y);
+  //  NSLog(@"DEBUG Location in view %f, %f",touchPoint.x,touchPoint.y);
     if (_xPan ==0)
     {
         _xPan = touchPoint.x;
@@ -95,15 +161,10 @@
     
 //    [self.delegate postionInDU:self.strKeyDU duName:self.lblUnit.text  xPosition:touchPoint.x yPosition:touchPoint.y];
     
-    // Get a reference to the flow layout
-    BGSSwipeFlowLayout *flowLayout = (BGSSwipeFlowLayout *)self.collectionView.collectionViewLayout;
-    [flowLayout setIsPanning:YES];
+      [flowLayout setIsPanning:YES];
     [flowLayout setXPan:(flowLayout.xPan + x_increment)];
     [flowLayout setYPan:(flowLayout.yPan + y_increment)];
-    // reference to datesource - used to get top index path
-    BGSSwipeDataSource *dataSource = (BGSSwipeDataSource *)self.collectionView.dataSource;
-
-    NSIndexPath *indexPath = [NSIndexPath indexPathForItem:([dataSource.events count] -1) inSection:0];
+   
     [flowLayout setSelectedIndexPath:indexPath];
     [flowLayout layoutAttributesForItemAtIndexPath:indexPath];
     [flowLayout invalidateLayout];
@@ -154,5 +215,6 @@
 	
 }
 */
+
 
 @end

@@ -27,6 +27,15 @@
 		D0B72C051A7FA58F00546ED3 /* BGSScheduleEventCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B72C041A7FA58F00546ED3 /* BGSScheduleEventCell.m */; };
 		D0B72C071A7FA63A00546ED3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0B72C061A7FA63A00546ED3 /* QuartzCore.framework */; };
 		D0B72C0B1A7FB17B00546ED3 /* BGSSwipeFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B72C0A1A7FB17B00546ED3 /* BGSSwipeFlowLayout.m */; };
+		D0B72C101A8114F100546ED3 /* BGSSwipeDecoration.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B72C0E1A8114F000546ED3 /* BGSSwipeDecoration.m */; };
+		D0B72C111A8114F100546ED3 /* BGSSwipeDecoration.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0B72C0F1A8114F100546ED3 /* BGSSwipeDecoration.xib */; };
+		D0B72C151A81263300546ED3 /* BGSSwipeDecorationHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B72C131A81263300546ED3 /* BGSSwipeDecorationHeader.m */; };
+		D0B72C161A81263300546ED3 /* BGSSwipeDecorationHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0B72C141A81263300546ED3 /* BGSSwipeDecorationHeader.xib */; };
+		D0B72C1C1A825AA400546ED3 /* fossil1.png in Resources */ = {isa = PBXBuildFile; fileRef = D0B72C171A825AA400546ED3 /* fossil1.png */; };
+		D0B72C1D1A825AA400546ED3 /* lake1.png in Resources */ = {isa = PBXBuildFile; fileRef = D0B72C181A825AA400546ED3 /* lake1.png */; };
+		D0B72C1E1A825AA400546ED3 /* lake2.png in Resources */ = {isa = PBXBuildFile; fileRef = D0B72C191A825AA400546ED3 /* lake2.png */; };
+		D0B72C1F1A825AA400546ED3 /* lizard1.png in Resources */ = {isa = PBXBuildFile; fileRef = D0B72C1A1A825AA400546ED3 /* lizard1.png */; };
+		D0B72C201A825AA400546ED3 /* roo1.png in Resources */ = {isa = PBXBuildFile; fileRef = D0B72C1B1A825AA400546ED3 /* roo1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +81,17 @@
 		D0B72C061A7FA63A00546ED3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		D0B72C091A7FB17B00546ED3 /* BGSSwipeFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BGSSwipeFlowLayout.h; path = BGSSwipeCollectionView/flowLayout/BGSSwipeFlowLayout.h; sourceTree = "<group>"; };
 		D0B72C0A1A7FB17B00546ED3 /* BGSSwipeFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BGSSwipeFlowLayout.m; path = BGSSwipeCollectionView/flowLayout/BGSSwipeFlowLayout.m; sourceTree = "<group>"; };
+		D0B72C0D1A8114F000546ED3 /* BGSSwipeDecoration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BGSSwipeDecoration.h; path = BGSSwipeCollectionView/Decoration/BGSSwipeDecoration.h; sourceTree = "<group>"; };
+		D0B72C0E1A8114F000546ED3 /* BGSSwipeDecoration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BGSSwipeDecoration.m; path = BGSSwipeCollectionView/Decoration/BGSSwipeDecoration.m; sourceTree = "<group>"; };
+		D0B72C0F1A8114F100546ED3 /* BGSSwipeDecoration.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BGSSwipeDecoration.xib; path = BGSSwipeCollectionView/Decoration/BGSSwipeDecoration.xib; sourceTree = "<group>"; };
+		D0B72C121A81263300546ED3 /* BGSSwipeDecorationHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BGSSwipeDecorationHeader.h; path = BGSSwipeCollectionView/Decoration/BGSSwipeDecorationHeader.h; sourceTree = "<group>"; };
+		D0B72C131A81263300546ED3 /* BGSSwipeDecorationHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BGSSwipeDecorationHeader.m; path = BGSSwipeCollectionView/Decoration/BGSSwipeDecorationHeader.m; sourceTree = "<group>"; };
+		D0B72C141A81263300546ED3 /* BGSSwipeDecorationHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BGSSwipeDecorationHeader.xib; path = BGSSwipeCollectionView/Decoration/BGSSwipeDecorationHeader.xib; sourceTree = "<group>"; };
+		D0B72C171A825AA400546ED3 /* fossil1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fossil1.png; path = Assets/fossil1.png; sourceTree = SOURCE_ROOT; };
+		D0B72C181A825AA400546ED3 /* lake1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lake1.png; path = Assets/lake1.png; sourceTree = SOURCE_ROOT; };
+		D0B72C191A825AA400546ED3 /* lake2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lake2.png; path = Assets/lake2.png; sourceTree = SOURCE_ROOT; };
+		D0B72C1A1A825AA400546ED3 /* lizard1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lizard1.png; path = Assets/lizard1.png; sourceTree = SOURCE_ROOT; };
+		D0B72C1B1A825AA400546ED3 /* roo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = roo1.png; path = Assets/roo1.png; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +179,7 @@
 		D0B72BDB1A7CF7FA00546ED3 /* BGSSwipeCollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				D0B72C0C1A81146000546ED3 /* Decoration */,
 				D0B72C081A7FB13700546ED3 /* flowLayout */,
 				D0B72BF31A7F82DB00546ED3 /* dataModel */,
 				D0B72BEC1A7F7B7F00546ED3 /* dataSource */,
@@ -201,6 +222,11 @@
 		D0B72BF81A7FA04300546ED3 /* assets */ = {
 			isa = PBXGroup;
 			children = (
+				D0B72C171A825AA400546ED3 /* fossil1.png */,
+				D0B72C181A825AA400546ED3 /* lake1.png */,
+				D0B72C191A825AA400546ED3 /* lake2.png */,
+				D0B72C1A1A825AA400546ED3 /* lizard1.png */,
+				D0B72C1B1A825AA400546ED3 /* roo1.png */,
 				D0B72BF91A7FA22100546ED3 /* Peter_cold.png */,
 				D0B72BFA1A7FA22100546ED3 /* Peter_flower.png */,
 				D0B72BFB1A7FA22100546ED3 /* Peter_focused.jpg */,
@@ -217,6 +243,19 @@
 				D0B72C0A1A7FB17B00546ED3 /* BGSSwipeFlowLayout.m */,
 			);
 			name = flowLayout;
+			sourceTree = "<group>";
+		};
+		D0B72C0C1A81146000546ED3 /* Decoration */ = {
+			isa = PBXGroup;
+			children = (
+				D0B72C0D1A8114F000546ED3 /* BGSSwipeDecoration.h */,
+				D0B72C0E1A8114F000546ED3 /* BGSSwipeDecoration.m */,
+				D0B72C0F1A8114F100546ED3 /* BGSSwipeDecoration.xib */,
+				D0B72C121A81263300546ED3 /* BGSSwipeDecorationHeader.h */,
+				D0B72C131A81263300546ED3 /* BGSSwipeDecorationHeader.m */,
+				D0B72C141A81263300546ED3 /* BGSSwipeDecorationHeader.xib */,
+			);
+			name = Decoration;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,13 +339,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0B72BC11A7CF58900546ED3 /* Main.storyboard in Resources */,
+				D0B72C1E1A825AA400546ED3 /* lake2.png in Resources */,
 				D0B72C011A7FA22100546ED3 /* peter_hike.png in Resources */,
 				D0B72BFE1A7FA22100546ED3 /* Peter_cold.png in Resources */,
+				D0B72C1F1A825AA400546ED3 /* lizard1.png in Resources */,
+				D0B72C1C1A825AA400546ED3 /* fossil1.png in Resources */,
 				D0B72C021A7FA22100546ED3 /* Peter_lookalike.png in Resources */,
 				D0B72BC61A7CF58900546ED3 /* LaunchScreen.xib in Resources */,
+				D0B72C111A8114F100546ED3 /* BGSSwipeDecoration.xib in Resources */,
 				D0B72BC31A7CF58900546ED3 /* Images.xcassets in Resources */,
 				D0B72BDE1A7E789400546ED3 /* iPhone.storyboard in Resources */,
+				D0B72C161A81263300546ED3 /* BGSSwipeDecorationHeader.xib in Resources */,
+				D0B72C201A825AA400546ED3 /* roo1.png in Resources */,
 				D0B72BFF1A7FA22100546ED3 /* Peter_flower.png in Resources */,
+				D0B72C1D1A825AA400546ED3 /* lake1.png in Resources */,
 				D0B72C001A7FA22100546ED3 /* Peter_focused.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,6 +378,8 @@
 				D0B72BB81A7CF58900546ED3 /* AppDelegate.m in Sources */,
 				D0B72C051A7FA58F00546ED3 /* BGSScheduleEventCell.m in Sources */,
 				D0B72BB51A7CF58900546ED3 /* main.m in Sources */,
+				D0B72C101A8114F100546ED3 /* BGSSwipeDecoration.m in Sources */,
+				D0B72C151A81263300546ED3 /* BGSSwipeDecorationHeader.m in Sources */,
 				D0B72BBE1A7CF58900546ED3 /* ViewController.m in Sources */,
 				D0B72BBB1A7CF58900546ED3 /* BGSSwipeChooser.xcdatamodeld in Sources */,
 			);

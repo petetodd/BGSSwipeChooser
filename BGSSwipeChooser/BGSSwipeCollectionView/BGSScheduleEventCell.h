@@ -13,6 +13,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *imgEvent;
 
+@property (weak, nonatomic) IBOutlet UIView *cellRed;
+@property (weak, nonatomic) IBOutlet UIView *cellGreen;
 
 @property (weak, nonatomic) NSString *strID;
 

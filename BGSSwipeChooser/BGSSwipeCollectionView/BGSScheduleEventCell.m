@@ -35,15 +35,21 @@
 {
  //   CALayer *leftBorder = [CALayer layer];
  //   leftBorder.frame = CGRectMake(0.0f, 0.0f,2.0f,self.frame.size.height);
-    
+    [self.cellGreen setAlpha:0];
+    [self.cellRed setAlpha:0];
     
     
       self.layer.cornerRadius = 10;
       self.layer.borderWidth = 0.1;
       self.layer.borderColor = [[UIColor colorWithRed:0 green:0 blue:0.7 alpha:1] CGColor];
 
-   //     leftBorder.backgroundColor = [UIColor blueColor].CGColor;
-        self.backgroundColor = [UIColor orangeColor];
+    [self setBackgroundColor:[UIColor yellowColor]];
+  //  CGAffineTransform affine = CGAffineTransformMakeScale (0.8f, 0.8f);
+    [self.contentView setBackgroundColor:[UIColor whiteColor]];
+
+ //   [self.contentView setTransform:affine];
+    
+    //self.contentView.transform = CGAffineTransform.MakeScale (0.8f, 0.8f);
 //    [self.layer addSublayer:leftBorder];
 }
 

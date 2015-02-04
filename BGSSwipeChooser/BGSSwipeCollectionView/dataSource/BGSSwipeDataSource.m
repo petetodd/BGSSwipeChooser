@@ -37,23 +37,39 @@ static NSString * const reuseIdentifier = @"Cell";
         NSString *strTitle = [NSString stringWithFormat:@"Other %i ",i];
         if (i ==0)
         {
-            BGSSampleScheduleEvent *event = [BGSSampleScheduleEvent eventWithTitle:@"Hiking" image:[UIImage imageNamed:@"peter_hike.png"]];
+            BGSSampleScheduleEvent *event = [BGSSampleScheduleEvent eventWithTitle:@"Hiking 1" image:[UIImage imageNamed:@"peter_hike.png"]];
             [self.events addObject:event];
         }else if (i ==2)
         {
-            BGSSampleScheduleEvent *event = [BGSSampleScheduleEvent eventWithTitle:@"Cold" image:[UIImage imageNamed:@"Peter_cold.png"]];
+            BGSSampleScheduleEvent *event = [BGSSampleScheduleEvent eventWithTitle:@"Cold 2" image:[UIImage imageNamed:@"Peter_cold.png"]];
             [self.events addObject:event];
         }else if (i ==3)
         {
-            BGSSampleScheduleEvent *event = [BGSSampleScheduleEvent eventWithTitle:@"Flower" image:[UIImage imageNamed:@"Peter_flower.png"]];
+            BGSSampleScheduleEvent *event = [BGSSampleScheduleEvent eventWithTitle:@"Flower 3" image:[UIImage imageNamed:@"Peter_flower.png"]];
             [self.events addObject:event];
         }else if (i ==4)
         {
-            BGSSampleScheduleEvent *event = [BGSSampleScheduleEvent eventWithTitle:@"More hiking" image:[UIImage imageNamed:@"peter_hike.png"]];
+            BGSSampleScheduleEvent *event = [BGSSampleScheduleEvent eventWithTitle:@"More hiking 4" image:[UIImage imageNamed:@"peter_hike.png"]];
             [self.events addObject:event];
         }else if (i ==5)
         {
-            BGSSampleScheduleEvent *event = [BGSSampleScheduleEvent eventWithTitle:@"Lookalike" image:[UIImage imageNamed:@"Peter_lookalike.png"]];
+            BGSSampleScheduleEvent *event = [BGSSampleScheduleEvent eventWithTitle:@"Lookalike 5" image:[UIImage imageNamed:@"Peter_lookalike.png"]];
+            [self.events addObject:event];
+        }else if (i ==6)
+        {
+            BGSSampleScheduleEvent *event = [BGSSampleScheduleEvent eventWithTitle:@"fossil 6" image:[UIImage imageNamed:@"fossil1.png"]];
+            [self.events addObject:event];
+        }else if (i ==7)
+        {
+            BGSSampleScheduleEvent *event = [BGSSampleScheduleEvent eventWithTitle:@"lake 7" image:[UIImage imageNamed:@"lake1.png"]];
+            [self.events addObject:event];
+        }else if (i ==8)
+        {
+            BGSSampleScheduleEvent *event = [BGSSampleScheduleEvent eventWithTitle:@"Lizard 8" image:[UIImage imageNamed:@"lizard1.png"]];
+            [self.events addObject:event];
+        }else if (i ==9)
+        {
+            BGSSampleScheduleEvent *event = [BGSSampleScheduleEvent eventWithTitle:@"Australia 9" image:[UIImage imageNamed:@"roo1.png"]];
             [self.events addObject:event];
         } else
         {
@@ -72,14 +88,28 @@ static NSString * const reuseIdentifier = @"Cell";
 - (NSArray *)indexPathsOfEventsDepthToShow:(int)intDepth
 {
     NSMutableArray *mutArray = [[NSMutableArray alloc]init];
-    long intCt = self.events.count - 1;
-    for (long i = intCt; i >= (self.events.count - intDepth); i--)
+    NSLog(@"DEBUG EVENT COUNT :%lu ",(unsigned long)self.events.count);
+
+    // Need to calculate the depth to show as if we stat with 10 and show a depth of 3, whne we get under 3 we'll through an out of array error.
+    int intDepthUpd = intDepth;
+    if (self.events.count < intDepth)
     {
+        intDepthUpd =  (int)self.events.count;
+    }
+    
+    
+    long intCt = self.events.count - 1;
+    for (long i = intCt; ((i >= (self.events.count - intDepthUpd)) && (i >= 0)); i--)
+    {
+        NSLog(@"DEBUG OBJECT AT INDEX :%lu ",i);
+
         if ([self.events objectAtIndex:i])
         {
             NSIndexPath *indexPath = [NSIndexPath indexPathForItem:i inSection:0];
 
             [mutArray addObject:indexPath];
+            NSLog(@"DEBUG indexPathsOfEventsDepthToShow selected event index: :%lu ",i);
+
         }
     }
     NSLog(@"DEBUG mutArray visibleIndexPaths count :%lu ",(unsigned long)mutArray.count);
@@ -95,6 +125,8 @@ static NSString * const reuseIdentifier = @"Cell";
 
 - (id<BGSScheduleEvent>)eventAtIndexPath:(NSIndexPath *)indexPath
 {
+    NSLog(@"DEBUG eventAtIndexPath :%lu ",indexPath.item);
+
     return self.events[indexPath.item];
 }
 
@@ -120,6 +152,9 @@ static NSString * const reuseIdentifier = @"Cell";
   //  UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     
     // Configure the cell
+    NSLog(@"DEBUG cellForItemAtIndexPath  index: :%lu ",indexPath.item);
+    
+
     
     id<BGSScheduleEvent> event = self.events[indexPath.item];
     BGSScheduleEventCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier  forIndexPath:indexPath];

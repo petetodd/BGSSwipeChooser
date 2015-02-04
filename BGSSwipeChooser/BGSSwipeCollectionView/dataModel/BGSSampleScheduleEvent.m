@@ -12,29 +12,10 @@
 // Note :Auto property synthesise will not synthesise properties declared in a protocol
 
 @synthesize strTitle = _title;
-@synthesize strSubTitle = _subTitle;
-@synthesize strStatus = _status;
-@synthesize strID = _strID;
-@synthesize strStarttime = _startTime;
-
 
 
 @synthesize intUnitOrder = _unitOrder;
-@synthesize intDay = _day;
-@synthesize intStartMinute = _startMinute;
-@synthesize intDurationInMinutes = _durationInMinutes;
-@synthesize timeSlotStartTime = _timeSlotStartTime;
 
-@synthesize strUnitKey = _strUnitKey;
-@synthesize strReferencekey = _strReferencekey;
-@synthesize strCustomerName = _strCustomerName;
-@synthesize strMatchDesc = _strMatchDesc;
-@synthesize strMatchAddress = _strMatchAddress;
-@synthesize eventRating = _eventRating;
-
-@synthesize strCustomerPhone = _strCustomerPhone;
-@synthesize strCustomerEmail = _strCustomerEmail;
-@synthesize strEventBlob = _strMatchBlob;
 @synthesize imgEvent = _imgEvent;
 
 
@@ -65,7 +46,7 @@
 
 - (NSString *)description
 {
-    return [NSString stringWithFormat:@"Title: %@, %ld : D:%ld H:%ld L:%ld",self.strTitle, (long)self.intUnitOrder, (long)self.intDay, (long)self.intStartMinute, (long)self.intDurationInMinutes];
+    return [NSString stringWithFormat:@"Title: %@, %ld",self.strTitle, (long)self.intUnitOrder];
 }
 
 
