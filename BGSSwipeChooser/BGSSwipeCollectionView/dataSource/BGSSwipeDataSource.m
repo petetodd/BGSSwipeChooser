@@ -37,9 +37,14 @@ static NSString * const reuseIdentifier = @"Cell";
         NSString *strTitle = [NSString stringWithFormat:@"Other %i ",i];
         if (i ==0)
         {
-            BGSSampleScheduleEvent *event = [BGSSampleScheduleEvent eventWithTitle:@"Hiking 1" image:[UIImage imageNamed:@"peter_hike.png"]];
+            BGSSampleScheduleEvent *event = [BGSSampleScheduleEvent eventWithTitle:@"Hiking 0" image:[UIImage imageNamed:@"peter_hike.png"]];
             [self.events addObject:event];
-        }else if (i ==2)
+        }else if (i ==1)
+        {
+            BGSSampleScheduleEvent *event = [BGSSampleScheduleEvent eventWithTitle:@"A lake 1" image:[UIImage imageNamed:@"lake1.png"]];
+            [self.events addObject:event];
+        }
+        else if (i ==2)
         {
             BGSSampleScheduleEvent *event = [BGSSampleScheduleEvent eventWithTitle:@"Cold 2" image:[UIImage imageNamed:@"Peter_cold.png"]];
             [self.events addObject:event];
@@ -61,7 +66,7 @@ static NSString * const reuseIdentifier = @"Cell";
             [self.events addObject:event];
         }else if (i ==7)
         {
-            BGSSampleScheduleEvent *event = [BGSSampleScheduleEvent eventWithTitle:@"lake 7" image:[UIImage imageNamed:@"lake1.png"]];
+            BGSSampleScheduleEvent *event = [BGSSampleScheduleEvent eventWithTitle:@"more lake 7" image:[UIImage imageNamed:@"lake1.png"]];
             [self.events addObject:event];
         }else if (i ==8)
         {

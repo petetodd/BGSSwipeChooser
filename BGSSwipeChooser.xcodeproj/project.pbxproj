@@ -21,7 +21,6 @@
 		D0B72BF71A7F854300546ED3 /* BGSSampleScheduleEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B72BF61A7F854300546ED3 /* BGSSampleScheduleEvent.m */; };
 		D0B72BFE1A7FA22100546ED3 /* Peter_cold.png in Resources */ = {isa = PBXBuildFile; fileRef = D0B72BF91A7FA22100546ED3 /* Peter_cold.png */; };
 		D0B72BFF1A7FA22100546ED3 /* Peter_flower.png in Resources */ = {isa = PBXBuildFile; fileRef = D0B72BFA1A7FA22100546ED3 /* Peter_flower.png */; };
-		D0B72C001A7FA22100546ED3 /* Peter_focused.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D0B72BFB1A7FA22100546ED3 /* Peter_focused.jpg */; };
 		D0B72C011A7FA22100546ED3 /* peter_hike.png in Resources */ = {isa = PBXBuildFile; fileRef = D0B72BFC1A7FA22100546ED3 /* peter_hike.png */; };
 		D0B72C021A7FA22100546ED3 /* Peter_lookalike.png in Resources */ = {isa = PBXBuildFile; fileRef = D0B72BFD1A7FA22100546ED3 /* Peter_lookalike.png */; };
 		D0B72C051A7FA58F00546ED3 /* BGSScheduleEventCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B72C041A7FA58F00546ED3 /* BGSScheduleEventCell.m */; };
@@ -73,7 +72,6 @@
 		D0B72BF61A7F854300546ED3 /* BGSSampleScheduleEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BGSSampleScheduleEvent.m; path = BGSSwipeCollectionView/dataModel/BGSSampleScheduleEvent.m; sourceTree = "<group>"; };
 		D0B72BF91A7FA22100546ED3 /* Peter_cold.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Peter_cold.png; path = Assets/Peter_cold.png; sourceTree = SOURCE_ROOT; };
 		D0B72BFA1A7FA22100546ED3 /* Peter_flower.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Peter_flower.png; path = Assets/Peter_flower.png; sourceTree = SOURCE_ROOT; };
-		D0B72BFB1A7FA22100546ED3 /* Peter_focused.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Peter_focused.jpg; path = Assets/Peter_focused.jpg; sourceTree = SOURCE_ROOT; };
 		D0B72BFC1A7FA22100546ED3 /* peter_hike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = peter_hike.png; path = Assets/peter_hike.png; sourceTree = SOURCE_ROOT; };
 		D0B72BFD1A7FA22100546ED3 /* Peter_lookalike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Peter_lookalike.png; path = Assets/Peter_lookalike.png; sourceTree = SOURCE_ROOT; };
 		D0B72C031A7FA58F00546ED3 /* BGSScheduleEventCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BGSScheduleEventCell.h; path = BGSSwipeCollectionView/BGSScheduleEventCell.h; sourceTree = "<group>"; };
@@ -229,7 +227,6 @@
 				D0B72C1B1A825AA400546ED3 /* roo1.png */,
 				D0B72BF91A7FA22100546ED3 /* Peter_cold.png */,
 				D0B72BFA1A7FA22100546ED3 /* Peter_flower.png */,
-				D0B72BFB1A7FA22100546ED3 /* Peter_focused.jpg */,
 				D0B72BFC1A7FA22100546ED3 /* peter_hike.png */,
 				D0B72BFD1A7FA22100546ED3 /* Peter_lookalike.png */,
 			);
@@ -353,7 +350,6 @@
 				D0B72C201A825AA400546ED3 /* roo1.png in Resources */,
 				D0B72BFF1A7FA22100546ED3 /* Peter_flower.png in Resources */,
 				D0B72C1D1A825AA400546ED3 /* lake1.png in Resources */,
-				D0B72C001A7FA22100546ED3 /* Peter_focused.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
