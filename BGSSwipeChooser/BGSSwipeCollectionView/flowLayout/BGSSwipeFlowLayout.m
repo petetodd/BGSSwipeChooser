@@ -14,21 +14,17 @@
 {
     int _offSet;
     CGSize _contentSize;
-    // Size of image will be 70% of the available frame
     CGFloat _topFrameWidth;
     CGFloat _topFrameHeight;
     CGFloat _topFrameX;
     CGFloat _topFrameY;
-    // Decoration Position
     CGFloat _xDecorationFrame;
     CGFloat _yDecorationFrame;
 
 }
 
-//const CGFloat ContentSizeWidth = 400;
 const CGFloat TopBarHeight = 44;
 
-//const CGFloat ContentSizeHeight = 500;
 
 
 #pragma mark - UICollectionViewLayout Implementation
@@ -44,7 +40,6 @@ const CGFloat TopBarHeight = 44;
     _topFrameWidth = _contentSize.width * 0.96;
     _topFrameHeight = (_contentSize.height - TopBarHeight - 50)  *0.60;
     _topFrameX = _contentSize.width * 0.02;
- //   _topFrameY = (_contentSize.height - 50) *0.05;
     _topFrameY = 50;
 
     _xDecorationFrame = 0;
@@ -75,10 +70,7 @@ const CGFloat TopBarHeight = 44;
     visibleRect.origin = self.collectionView.contentOffset;
     visibleRect.size = self.collectionView.bounds.size;
     
-    
-    //NSLog(@"DEBUG rect size : %f,%f,%f,%f ",rect.size.height,rect.size.width, rect.origin.x, rect.origin.y);
-    //NSLog(@"DEBUG rect visi : %f,%f,%f,%f ",visibleRect.size.height,visibleRect.size.width, visibleRect.origin.x, visibleRect.origin.y);
-    
+
     
     // Cells
     NSArray *visibleIndexPaths = [self indexPathsOfItemsInShow:3];
@@ -198,28 +190,18 @@ const CGFloat TopBarHeight = 44;
 
 - (CGRect)frameForEvent:(id<BGSScheduleEvent>)event
 {
-    //   CGFloat totalWidth = [self collectionViewContentSize].width - WidthPerMinute;
-    //  CGFloat widthPerDay = totalWidth / DaysPerWeek;
-    //   CGFloat widthPerDay = 100;
-    
+
     CGRect frame = CGRectZero;
 
-    // Center and then offset as required
     
-    // Always offset by the width of the y axis header
     frame.origin.x = _topFrameX + _offSet;
     
-    //   frame.origin.y = (event.intDeliveryUnit * HeightPerDU) - HeightPerDU;
     frame.origin.y = _topFrameY + _offSet ;
- //   frame.origin.y = 10 ;
 
-    //  frame.size.width = widthPerDay;
     
     frame.size.width = _topFrameWidth - (_offSet *2) ;
-    //   frame.size.height = event.intDurationInHours * HeightPerHour;
     frame.size.height = _topFrameHeight;
     
-  //  frame = CGRectInset(frame, 1, 0);
     return frame;
 }
 - (CGRect)frameForPanningEvent:(id<BGSScheduleEvent>)event
