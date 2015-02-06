@@ -30,14 +30,14 @@ static NSString * const reuseIdentifier = @"Cell";
 - (void)generateStructuredSampleData:(int)nbrDataPoints
 {
     
-    [UIImage imageNamed:@"peter_hike.png"];
+    [UIImage imageNamed:@"bird1.png"];
     for (int i = 0; i < nbrDataPoints; i++)
     {
         // Create the event
         NSString *strTitle = [NSString stringWithFormat:@"Other %i ",i];
         if (i ==0)
         {
-            BGSSampleScheduleEvent *event = [BGSSampleScheduleEvent eventWithTitle:@"Hiking 0" image:[UIImage imageNamed:@"peter_hike.png"]];
+            BGSSampleScheduleEvent *event = [BGSSampleScheduleEvent eventWithTitle:@"Bird 0" image:[UIImage imageNamed:@"bird1.png"]];
             [self.events addObject:event];
         }else if (i ==1)
         {
@@ -46,19 +46,19 @@ static NSString * const reuseIdentifier = @"Cell";
         }
         else if (i ==2)
         {
-            BGSSampleScheduleEvent *event = [BGSSampleScheduleEvent eventWithTitle:@"Cold 2" image:[UIImage imageNamed:@"Peter_cold.png"]];
+            BGSSampleScheduleEvent *event = [BGSSampleScheduleEvent eventWithTitle:@"Cat 2" image:[UIImage imageNamed:@"cat1.png"]];
             [self.events addObject:event];
         }else if (i ==3)
         {
-            BGSSampleScheduleEvent *event = [BGSSampleScheduleEvent eventWithTitle:@"Flower 3" image:[UIImage imageNamed:@"Peter_flower.png"]];
+            BGSSampleScheduleEvent *event = [BGSSampleScheduleEvent eventWithTitle:@"Cat 3" image:[UIImage imageNamed:@"cat2.png"]];
             [self.events addObject:event];
         }else if (i ==4)
         {
-            BGSSampleScheduleEvent *event = [BGSSampleScheduleEvent eventWithTitle:@"More hiking 4" image:[UIImage imageNamed:@"peter_hike.png"]];
+            BGSSampleScheduleEvent *event = [BGSSampleScheduleEvent eventWithTitle:@"Seal 4" image:[UIImage imageNamed:@"seal1.png"]];
             [self.events addObject:event];
         }else if (i ==5)
         {
-            BGSSampleScheduleEvent *event = [BGSSampleScheduleEvent eventWithTitle:@"Lookalike 5" image:[UIImage imageNamed:@"Peter_lookalike.png"]];
+            BGSSampleScheduleEvent *event = [BGSSampleScheduleEvent eventWithTitle:@"Bird 5" image:[UIImage imageNamed:@"bird1.png"]];
             [self.events addObject:event];
         }else if (i ==6)
         {
@@ -66,7 +66,7 @@ static NSString * const reuseIdentifier = @"Cell";
             [self.events addObject:event];
         }else if (i ==7)
         {
-            BGSSampleScheduleEvent *event = [BGSSampleScheduleEvent eventWithTitle:@"more lake 7" image:[UIImage imageNamed:@"lake1.png"]];
+            BGSSampleScheduleEvent *event = [BGSSampleScheduleEvent eventWithTitle:@"more lake 7" image:[UIImage imageNamed:@"lake2.png"]];
             [self.events addObject:event];
         }else if (i ==8)
         {
@@ -78,7 +78,7 @@ static NSString * const reuseIdentifier = @"Cell";
             [self.events addObject:event];
         } else
         {
-            BGSSampleScheduleEvent *event = [BGSSampleScheduleEvent eventWithTitle:strTitle image:[UIImage imageNamed:@"Peter_lookalike.png"]];
+            BGSSampleScheduleEvent *event = [BGSSampleScheduleEvent eventWithTitle:strTitle image:[UIImage imageNamed:@"bird1.png"]];
             [self.events addObject:event];
         }
         

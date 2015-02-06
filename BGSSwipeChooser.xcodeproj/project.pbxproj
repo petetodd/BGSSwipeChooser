@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		D05C91E51A84CA9F00A0D60E /* IMG_0587.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D05C91E31A84CA9F00A0D60E /* IMG_0587.jpg */; };
 		D05C91E61A84CA9F00A0D60E /* IMG_0588.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D05C91E41A84CA9F00A0D60E /* IMG_0588.jpg */; };
+		D05C91EB1A84CE1800A0D60E /* bird1.png in Resources */ = {isa = PBXBuildFile; fileRef = D05C91E71A84CE1800A0D60E /* bird1.png */; };
+		D05C91EC1A84CE1800A0D60E /* cat1.png in Resources */ = {isa = PBXBuildFile; fileRef = D05C91E81A84CE1800A0D60E /* cat1.png */; };
+		D05C91ED1A84CE1800A0D60E /* cat2.png in Resources */ = {isa = PBXBuildFile; fileRef = D05C91E91A84CE1800A0D60E /* cat2.png */; };
+		D05C91EE1A84CE1800A0D60E /* seal1.png in Resources */ = {isa = PBXBuildFile; fileRef = D05C91EA1A84CE1800A0D60E /* seal1.png */; };
 		D0B72BB51A7CF58900546ED3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B72BB41A7CF58900546ED3 /* main.m */; };
 		D0B72BB81A7CF58900546ED3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B72BB71A7CF58900546ED3 /* AppDelegate.m */; };
 		D0B72BBB1A7CF58900546ED3 /* BGSSwipeChooser.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D0B72BB91A7CF58900546ED3 /* BGSSwipeChooser.xcdatamodeld */; };
@@ -21,10 +25,6 @@
 		D0B72BEF1A7F7BEA00546ED3 /* BGSSwipeDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B72BEE1A7F7BEA00546ED3 /* BGSSwipeDataSource.m */; };
 		D0B72BF21A7F7C7400546ED3 /* BGSSwipeCVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B72BF11A7F7C7400546ED3 /* BGSSwipeCVC.m */; };
 		D0B72BF71A7F854300546ED3 /* BGSSampleScheduleEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B72BF61A7F854300546ED3 /* BGSSampleScheduleEvent.m */; };
-		D0B72BFE1A7FA22100546ED3 /* Peter_cold.png in Resources */ = {isa = PBXBuildFile; fileRef = D0B72BF91A7FA22100546ED3 /* Peter_cold.png */; };
-		D0B72BFF1A7FA22100546ED3 /* Peter_flower.png in Resources */ = {isa = PBXBuildFile; fileRef = D0B72BFA1A7FA22100546ED3 /* Peter_flower.png */; };
-		D0B72C011A7FA22100546ED3 /* peter_hike.png in Resources */ = {isa = PBXBuildFile; fileRef = D0B72BFC1A7FA22100546ED3 /* peter_hike.png */; };
-		D0B72C021A7FA22100546ED3 /* Peter_lookalike.png in Resources */ = {isa = PBXBuildFile; fileRef = D0B72BFD1A7FA22100546ED3 /* Peter_lookalike.png */; };
 		D0B72C051A7FA58F00546ED3 /* BGSScheduleEventCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B72C041A7FA58F00546ED3 /* BGSScheduleEventCell.m */; };
 		D0B72C071A7FA63A00546ED3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0B72C061A7FA63A00546ED3 /* QuartzCore.framework */; };
 		D0B72C0B1A7FB17B00546ED3 /* BGSSwipeFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B72C0A1A7FB17B00546ED3 /* BGSSwipeFlowLayout.m */; };
@@ -52,6 +52,10 @@
 /* Begin PBXFileReference section */
 		D05C91E31A84CA9F00A0D60E /* IMG_0587.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_0587.jpg; path = Assets/IMG_0587.jpg; sourceTree = SOURCE_ROOT; };
 		D05C91E41A84CA9F00A0D60E /* IMG_0588.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_0588.jpg; path = Assets/IMG_0588.jpg; sourceTree = SOURCE_ROOT; };
+		D05C91E71A84CE1800A0D60E /* bird1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bird1.png; path = Assets/bird1.png; sourceTree = SOURCE_ROOT; };
+		D05C91E81A84CE1800A0D60E /* cat1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cat1.png; path = Assets/cat1.png; sourceTree = SOURCE_ROOT; };
+		D05C91E91A84CE1800A0D60E /* cat2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cat2.png; path = Assets/cat2.png; sourceTree = SOURCE_ROOT; };
+		D05C91EA1A84CE1800A0D60E /* seal1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = seal1.png; path = Assets/seal1.png; sourceTree = SOURCE_ROOT; };
 		D0B72BAF1A7CF58800546ED3 /* BGSSwipeChooser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BGSSwipeChooser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0B72BB31A7CF58900546ED3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0B72BB41A7CF58900546ED3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -74,10 +78,6 @@
 		D0B72BF41A7F83A000546ED3 /* BGSScheduleEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BGSScheduleEvent.h; path = BGSSwipeCollectionView/dataModel/BGSScheduleEvent.h; sourceTree = "<group>"; };
 		D0B72BF51A7F854300546ED3 /* BGSSampleScheduleEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BGSSampleScheduleEvent.h; path = BGSSwipeCollectionView/dataModel/BGSSampleScheduleEvent.h; sourceTree = "<group>"; };
 		D0B72BF61A7F854300546ED3 /* BGSSampleScheduleEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BGSSampleScheduleEvent.m; path = BGSSwipeCollectionView/dataModel/BGSSampleScheduleEvent.m; sourceTree = "<group>"; };
-		D0B72BF91A7FA22100546ED3 /* Peter_cold.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Peter_cold.png; path = Assets/Peter_cold.png; sourceTree = SOURCE_ROOT; };
-		D0B72BFA1A7FA22100546ED3 /* Peter_flower.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Peter_flower.png; path = Assets/Peter_flower.png; sourceTree = SOURCE_ROOT; };
-		D0B72BFC1A7FA22100546ED3 /* peter_hike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = peter_hike.png; path = Assets/peter_hike.png; sourceTree = SOURCE_ROOT; };
-		D0B72BFD1A7FA22100546ED3 /* Peter_lookalike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Peter_lookalike.png; path = Assets/Peter_lookalike.png; sourceTree = SOURCE_ROOT; };
 		D0B72C031A7FA58F00546ED3 /* BGSScheduleEventCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BGSScheduleEventCell.h; path = BGSSwipeCollectionView/BGSScheduleEventCell.h; sourceTree = "<group>"; };
 		D0B72C041A7FA58F00546ED3 /* BGSScheduleEventCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BGSScheduleEventCell.m; path = BGSSwipeCollectionView/BGSScheduleEventCell.m; sourceTree = "<group>"; };
 		D0B72C061A7FA63A00546ED3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -224,6 +224,10 @@
 		D0B72BF81A7FA04300546ED3 /* assets */ = {
 			isa = PBXGroup;
 			children = (
+				D05C91E71A84CE1800A0D60E /* bird1.png */,
+				D05C91E81A84CE1800A0D60E /* cat1.png */,
+				D05C91E91A84CE1800A0D60E /* cat2.png */,
+				D05C91EA1A84CE1800A0D60E /* seal1.png */,
 				D05C91E31A84CA9F00A0D60E /* IMG_0587.jpg */,
 				D05C91E41A84CA9F00A0D60E /* IMG_0588.jpg */,
 				D0B72C171A825AA400546ED3 /* fossil1.png */,
@@ -231,10 +235,6 @@
 				D0B72C191A825AA400546ED3 /* lake2.png */,
 				D0B72C1A1A825AA400546ED3 /* lizard1.png */,
 				D0B72C1B1A825AA400546ED3 /* roo1.png */,
-				D0B72BF91A7FA22100546ED3 /* Peter_cold.png */,
-				D0B72BFA1A7FA22100546ED3 /* Peter_flower.png */,
-				D0B72BFC1A7FA22100546ED3 /* peter_hike.png */,
-				D0B72BFD1A7FA22100546ED3 /* Peter_lookalike.png */,
 			);
 			name = assets;
 			sourceTree = "<group>";
@@ -342,21 +342,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0B72BC11A7CF58900546ED3 /* Main.storyboard in Resources */,
+				D05C91EE1A84CE1800A0D60E /* seal1.png in Resources */,
+				D05C91ED1A84CE1800A0D60E /* cat2.png in Resources */,
 				D0B72C1E1A825AA400546ED3 /* lake2.png in Resources */,
-				D0B72C011A7FA22100546ED3 /* peter_hike.png in Resources */,
-				D0B72BFE1A7FA22100546ED3 /* Peter_cold.png in Resources */,
+				D05C91EB1A84CE1800A0D60E /* bird1.png in Resources */,
 				D0B72C1F1A825AA400546ED3 /* lizard1.png in Resources */,
 				D0B72C1C1A825AA400546ED3 /* fossil1.png in Resources */,
-				D0B72C021A7FA22100546ED3 /* Peter_lookalike.png in Resources */,
 				D0B72BC61A7CF58900546ED3 /* LaunchScreen.xib in Resources */,
 				D0B72C111A8114F100546ED3 /* BGSSwipeDecoration.xib in Resources */,
 				D05C91E61A84CA9F00A0D60E /* IMG_0588.jpg in Resources */,
 				D0B72BC31A7CF58900546ED3 /* Images.xcassets in Resources */,
+				D05C91EC1A84CE1800A0D60E /* cat1.png in Resources */,
 				D0B72BDE1A7E789400546ED3 /* iPhone.storyboard in Resources */,
 				D05C91E51A84CA9F00A0D60E /* IMG_0587.jpg in Resources */,
 				D0B72C161A81263300546ED3 /* BGSSwipeDecorationHeader.xib in Resources */,
 				D0B72C201A825AA400546ED3 /* roo1.png in Resources */,
-				D0B72BFF1A7FA22100546ED3 /* Peter_flower.png in Resources */,
 				D0B72C1D1A825AA400546ED3 /* lake1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
