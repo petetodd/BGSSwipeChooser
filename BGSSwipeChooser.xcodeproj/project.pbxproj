@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D05C91E51A84CA9F00A0D60E /* IMG_0587.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D05C91E31A84CA9F00A0D60E /* IMG_0587.jpg */; };
+		D05C91E61A84CA9F00A0D60E /* IMG_0588.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D05C91E41A84CA9F00A0D60E /* IMG_0588.jpg */; };
 		D0B72BB51A7CF58900546ED3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B72BB41A7CF58900546ED3 /* main.m */; };
 		D0B72BB81A7CF58900546ED3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B72BB71A7CF58900546ED3 /* AppDelegate.m */; };
 		D0B72BBB1A7CF58900546ED3 /* BGSSwipeChooser.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D0B72BB91A7CF58900546ED3 /* BGSSwipeChooser.xcdatamodeld */; };
@@ -48,6 +50,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D05C91E31A84CA9F00A0D60E /* IMG_0587.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_0587.jpg; path = Assets/IMG_0587.jpg; sourceTree = SOURCE_ROOT; };
+		D05C91E41A84CA9F00A0D60E /* IMG_0588.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_0588.jpg; path = Assets/IMG_0588.jpg; sourceTree = SOURCE_ROOT; };
 		D0B72BAF1A7CF58800546ED3 /* BGSSwipeChooser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BGSSwipeChooser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0B72BB31A7CF58900546ED3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0B72BB41A7CF58900546ED3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -220,6 +224,8 @@
 		D0B72BF81A7FA04300546ED3 /* assets */ = {
 			isa = PBXGroup;
 			children = (
+				D05C91E31A84CA9F00A0D60E /* IMG_0587.jpg */,
+				D05C91E41A84CA9F00A0D60E /* IMG_0588.jpg */,
 				D0B72C171A825AA400546ED3 /* fossil1.png */,
 				D0B72C181A825AA400546ED3 /* lake1.png */,
 				D0B72C191A825AA400546ED3 /* lake2.png */,
@@ -344,8 +350,10 @@
 				D0B72C021A7FA22100546ED3 /* Peter_lookalike.png in Resources */,
 				D0B72BC61A7CF58900546ED3 /* LaunchScreen.xib in Resources */,
 				D0B72C111A8114F100546ED3 /* BGSSwipeDecoration.xib in Resources */,
+				D05C91E61A84CA9F00A0D60E /* IMG_0588.jpg in Resources */,
 				D0B72BC31A7CF58900546ED3 /* Images.xcassets in Resources */,
 				D0B72BDE1A7E789400546ED3 /* iPhone.storyboard in Resources */,
+				D05C91E51A84CA9F00A0D60E /* IMG_0587.jpg in Resources */,
 				D0B72C161A81263300546ED3 /* BGSSwipeDecorationHeader.xib in Resources */,
 				D0B72C201A825AA400546ED3 /* roo1.png in Resources */,
 				D0B72BFF1A7FA22100546ED3 /* Peter_flower.png in Resources */,
@@ -572,6 +580,7 @@
 				D0B72BD71A7CF58900546ED3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D0B72BD81A7CF58900546ED3 /* Build configuration list for PBXNativeTarget "BGSSwipeChooserTests" */ = {
 			isa = XCConfigurationList;
@@ -580,6 +589,7 @@
 				D0B72BDA1A7CF58900546ED3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
